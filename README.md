@@ -6,7 +6,7 @@ Welcome to Quotes
 
 <a name="about"></a>
 ## About The App
-`Ipl Gallery` is an Open Source project brought to you by `Iot Lab,KIIT` and it brings you easy and optimized visuals for the explanation of the code. 
+`Quotes` is an Open Source project brought to you by `Iot Lab,KIIT` and it brings you easy and optimized visuals for the explanation of the code. 
 It’s a web app that is built using html,css and javascript. Further updates will be available soon.
 
 
