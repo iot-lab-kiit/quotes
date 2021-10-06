@@ -36,11 +36,11 @@ git clone https://github.com/Your-username/quotes.git
 
 6.Send us a Pull Request describing about the component you have added.
 
-`Note -` Adding a component that is already listed in the app with minor changes is not allowed.
+`Note -` Adding a component that is already listed in the website with minor changes is not allowed.
 
 <a name="tasks"></a>
 
-Refer to [issues](https://github.com/iot-lab-kiit/quotes/issues) for more tasks.
+Refer to [issues](https://github.com/iot-lab-kiit/quotes/issues) for tasks.
 
 
 <a name="about_developers"></a>
