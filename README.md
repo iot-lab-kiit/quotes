@@ -69,7 +69,7 @@ greater end-user participation. We currently have a number of successful goods a
 
 <a name="play"></a>
 ## Deployed Version
-https://quotes-1b6fd.web.app/quotes
+https://quotes-iot.herokuapp.com/
 
 ## Features (till now)
 1. Adding quotes
