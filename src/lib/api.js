@@ -38,6 +38,23 @@ export async function getSingleQuote(quoteId) {
   return loadedQuote;
 }
 
+export async function editQuote(newQuoteBody) {
+  const response = await fetch(`${FIREBASE_DOMAIN}/quotes/${newQuoteBody.id}.json`, {
+    method: 'PUT',
+    body: JSON.stringify({author: newQuoteBody.author, text: newQuoteBody.text}),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.message || 'Could not edit quote.');
+  }
+
+  return null;
+}
+
 export async function addQuote(quoteData) {
   const response = await fetch(`${FIREBASE_DOMAIN}/quotes.json`, {
     method: 'POST',
