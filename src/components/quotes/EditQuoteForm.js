@@ -30,7 +30,7 @@ const EditQuoteForm = (props) => {
 
     useEffect(()=>{
         textInputRef.current.value=props.quoteData.text;
-    },[])
+    },[props.quoteData.text])
 
     return (
         <Fragment>

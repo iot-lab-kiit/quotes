@@ -25,7 +25,7 @@ const EditQuote = () => {
         if (editRequestStatus === 'completed') {
             history.push(`/quotes/${quoteId}`);
         }
-    }, [editRequestStatus, history]);
+    }, [editRequestStatus, history, quoteId]);
 
     if(status === 'pending'){
         return <div className='centered'>
@@ -42,7 +42,6 @@ const EditQuote = () => {
     }
 
     const editQuoteHandler = quoteData => {
-        console.log(quoteData)
         sendEditRequest({...quoteData, id: quoteId});
     }
 
