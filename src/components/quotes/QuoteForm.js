@@ -28,7 +28,7 @@ const QuoteForm = (props) => {
 
     // clears field after submitting
     authorInputRef.current.value = '';
-    enteredText.current.value = '';
+    textInputRef.current.value = '';
   }
 
   const onFocusHandler = () => {
