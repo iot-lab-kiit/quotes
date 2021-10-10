@@ -8,6 +8,7 @@ const AllQuotes = React.lazy(() => import('./pages/AllQuotes'));
 const NewQuote = React.lazy(() => import('./pages/NewQuote'));
 const QuoteDetail = React.lazy(() => import('./pages/QuoteDetail'));
 const NotFound = React.lazy(() => import('./pages/NotFound'));
+const EditQuote =  React.lazy(() => import('./pages/EditQuote'));
 
 function App() {
     return (
@@ -22,6 +23,9 @@ function App() {
                     </Route>
                     <Route path="/quotes/:quoteId">
                         <QuoteDetail/>
+                    </Route>
+                    <Route path="/edit-quote/:quoteId">
+                        <EditQuote/>
                     </Route>
                     <Route path="/new-quote">
                         <NewQuote/>

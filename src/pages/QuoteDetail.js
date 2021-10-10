@@ -34,7 +34,7 @@ const QuoteDetail = () => {
     }
 
     return <Fragment>
-        <HighlightedQuote text={loadedQuote.text} author={loadedQuote.author}/>
+        <HighlightedQuote text={loadedQuote.text} author={loadedQuote.author} quoteId={quoteId}/>
         <Route path={match.path} exact>
             <div className='centered'>
                 <Link className='btn--flat' to={`${match.url}/comments`}>

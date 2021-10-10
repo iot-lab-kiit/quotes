@@ -6,6 +6,7 @@
   margin: 3rem auto;
   width: 90%;
   max-width: 40rem;
+  
 }
 
 .quote p {
@@ -17,4 +18,8 @@
   font-size: 1.5rem;
   text-align: right;
   color: #a1e0e0;
+}
+
+.editButton {
+  color: white;
 }
