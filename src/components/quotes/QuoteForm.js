@@ -1,5 +1,5 @@
 import {useRef, useState, Fragment} from 'react';
-import {Prompt} from 'react-router-dom';
+import {Prompt, useHistory} from 'react-router-dom';
 
 import Card from '../UI/Card';
 import LoadingSpinner from '../UI/LoadingSpinner';
@@ -7,6 +7,7 @@ import classes from './QuoteForm.module.css';
 
 const QuoteForm = (props) => {
     const [isEntering, setIsEntering] = useState(false);
+    const history = useHistory();
 
     const authorInputRef = useRef();
     const textInputRef = useRef();
@@ -30,10 +31,24 @@ const QuoteForm = (props) => {
         setIsEntering(false);
     }
 
+    const closeFormHandler = () => {
+      if (isEntering) {
+        history.goBack();
+        return;
+      }
+      history.goBack();
+      setIsEntering(false);
+    }
+
     return (
         <Fragment>
             <Prompt when={isEntering} message={(location) => 'returning will cause entered data to lose!'}/>
             <Card>
+                <div className={classes.closeButtonContainer} onClick={closeFormHandler}>
+                    <button className={classes.closeButton}>
+                        x
+                    </button>
+                </div>
                 <form onFocus={onFocusHandler} className={classes.form} onSubmit={submitFormHandler}>
                     {props.isLoading && (
                         <div className={classes.loading}>

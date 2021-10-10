@@ -47,3 +47,32 @@
 .actions button {
   font-size: 1.25rem;
 }
+
+.closeButtonContainer {
+  position: relative;
+}
+
+.closeButton{
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  background-color: #C94A18;
+  color: white;
+  font-size: 14px;
+  border-width: 0;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+}
+
+.closeButton:hover{
+  background-color: #b34317;
+}
+
+.demo{
+  background-color: blue;
+}
