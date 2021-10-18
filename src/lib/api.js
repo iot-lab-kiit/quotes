@@ -111,3 +111,19 @@ export async function getAllComments(quoteId) {
 
   return transformedComments;
 }
+
+export async function deleteComment(commentID){
+  const response = await fetch(`${FIREBASE_DOMAIN}/comments/${commentID}.json`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+  
+  if(response.status === 200){
+    console.log("Deleted Succesfully")
+    console.log(response)
+  }else if(response.status === 412){
+    console.log("Error deleting the comment");
+  }
+}
