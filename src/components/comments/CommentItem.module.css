@@ -5,3 +5,18 @@
   padding-bottom: 0.5rem;
   border-bottom: 2px solid teal;;
 }
+
+.deleteButton{
+  background: transparent;
+  outline: none;
+  border: solid 1px rgb(255, 60, 60);
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  color: rgb(255, 60, 60);
+}
+
+.deleteButton:hover{
+  background: rgb(255, 60, 60);
+  color: white;
+}
