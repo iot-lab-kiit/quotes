@@ -120,10 +120,7 @@ export async function deleteComment(commentID){
     },
   });
   
-  if(response.status === 200){
-    console.log("Deleted Succesfully")
-    console.log(response)
-  }else if(response.status === 412){
-    console.log("Error deleting the comment");
+  if(response.status === 412){
+    throw new Error('Cannot delete comment');
   }
 }
