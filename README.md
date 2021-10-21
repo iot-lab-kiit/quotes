@@ -79,6 +79,8 @@ https://quotes-iot.herokuapp.com/
 5. Fetching data from firebase
 6. Storing data to firebase
 7. Hosted on firebase
+8. Cancel feature
+9. Editing quote feature
 
 [Back to Start](#title)
 
